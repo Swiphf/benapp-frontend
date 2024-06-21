@@ -6,10 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
-  const [todos, setTodos] = useState([
-    { id: 1, text: 'Learn React', completed: false },
-    { id: 2, text: 'Build a Todo App', completed: false },
-  ]);
+  const [todos, setTodos] = useState([]);
 
   const deleteTodo = (id) => {
     const updatedTodos = todos.filter(todo => todo.id !== id);
